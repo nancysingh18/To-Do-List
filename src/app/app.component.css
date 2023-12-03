@@ -1,0 +1,71 @@
+/* h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(41, 197, 145);
+}
+
+.container {
+
+    width: 70%;}
+
+input {
+    display: flexbox;
+    justify-content: center;
+    border: none;
+
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(195, 227, 236);
+
+}
+
+input[type=submit] {
+    font-weight: 700;
+    padding: 10px;
+    background-color: lightpink;
+    color: white;
+}
+
+td {
+    font-weight: 500;
+    border: none;
+    padding: 7px
+}
+
+.card:nth-child(odd) {
+    background: rgb(177, 223, 177);
+}
+
+.card:nth-child(even) {
+    background-color: blanchedalmond;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cover {
+    background-image: url(https://img.freepik.com/premium-photo/photo-branches-leaves-desktop-wallpaper-backgrounds_763111-16260.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 550px
+       
+} */

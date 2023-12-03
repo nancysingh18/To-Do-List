@@ -1,0 +1,40 @@
+input {
+    display: flexbox;
+    justify-content: center;
+    border: none;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(195, 227, 236);
+
+}
+
+input[type=submit] {
+    font-weight: 700;
+    padding: 10px;
+    background-color: lightpink;
+    color: white;
+}
+
+.container {
+    background-image: url(https://img.freepik.com/premium-photo/photo-branches-leaves-desktop-wallpaper-backgrounds_763111-16260.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    
+        /* opacity: .8; */
+}
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(41, 197, 145);
+}
+.box {
+    display: flex;
+    justify-content: center;
+}

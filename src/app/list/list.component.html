@@ -1,0 +1,75 @@
+<div class="cover">
+  <form #list="ngForm" (ngSubmit)="userlist(list.value)">
+    <h1>To Do List</h1>
+    <div class="container p-3">
+      <div class="box">
+        <input type="text" placeholder="Enter here something to add" ngModel name="list" required #text="ngModel" >
+        <span *ngIf="text.invalid && text.touched"></span>
+        <input type="submit" value="ADD" click="add()" [disabled]="list.invalid">
+      </div>
+    </div>
+
+  </form>
+
+
+  <!-- <form #list1="ngForm" (ngSubmit)="updatelist(list.value)">
+
+    <div class="container p-3">
+      <div class="box">
+        <input type="text" placeholder="Enter here something to add" name="list" >
+        <input type="submit" value="Update" click="add()">
+      </div>
+    </div>
+
+  </form> -->
+
+  <!-- list -->
+  <div class="container ">
+    <div class="row ">
+      <div class="card col-5 m-1" *ngFor="let d of data1">
+        <table>
+          <tr>
+            <td>
+              <li  [style.background]="backgroundColor">  {{d.list}}  </li>
+            </td>
+            <td style="cursor: pointer;">
+              <span i class="bi bi-check2-circle" id="checked" style="color:green"
+              (click)="toggleColor(d.id)"></span>
+              <span i class=" bi bi-pencil text-primary mx-1" (click)="onEdit(d.id,d.data2)"></span>
+              <span (click)="delete(d.id)" class="text-danger">X</span>
+            </td>
+
+          </tr>
+        </table>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- <div >
+    <table  >
+    <tr  >
+      <td class="col-8"  ><li>xhfhfhgfhvbbcxghghfvbfghfhghfghbgfh</li></td>
+      <td class="col-8" ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+      <td  ><li>xhfhfhgfh</li></td>
+
+
+    </tr>
+    </table>
+  </div> -->
+  </div>
